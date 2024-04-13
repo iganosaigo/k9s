@@ -86,7 +86,7 @@ func (p *Pod) portForwardIndicator(data *model1.TableData) {
 
 func (p *Pod) bindDangerousKeys(aa *ui.KeyActions) {
 	aa.Bulk(ui.KeyMap{
-		tcell.KeyCtrlK: ui.NewKeyActionWithOpts(
+		tcell.KeyCtrlY: ui.NewKeyActionWithOpts(
 			"Kill",
 			p.killCmd,
 			ui.ActionOpts{
