@@ -142,7 +142,7 @@ func (a *App) bindKeys() {
 	a.actions = NewKeyActionsFromMap(KeyMap{
 		KeyColon:       NewKeyAction("Cmd", a.activateCmd, false),
 		tcell.KeyCtrlR: NewKeyAction("Redraw", a.redrawCmd, false),
-		tcell.KeyCtrlP: NewKeyAction("Persist", a.saveCmd, false),
+		tcell.KeyCtrlT: NewKeyAction("Persist", a.saveCmd, false),
 		tcell.KeyCtrlC: NewKeyAction("Quit", a.quitCmd, false),
 		tcell.KeyCtrlU: NewSharedKeyAction("Clear Filter", a.clearCmd, false),
 		tcell.KeyCtrlQ: NewSharedKeyAction("Clear Filter", a.clearCmd, false),
